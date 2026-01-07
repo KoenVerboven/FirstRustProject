@@ -1,3 +1,6 @@
+<img width="270" height="148" alt="image" src="https://github.com/user-attachments/assets/350a5d3b-c6ef-4c57-8397-021578c5ca3e" />
+
+
 Installing Rust for Visual Code :
 
 Download and install from 
