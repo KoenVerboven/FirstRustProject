@@ -1,22 +1,24 @@
 fn main() {
     let yourname = "Koen Verboven";
-    let earth_weight: f32 = 75.0; // Example weight on Earth in kg
+    let yourweight: f32 = 75.0;
+    let yourlength: f32 = 1.80;
+    //let yourage: u8 = 30;
 
-    println!("Koen Verboven 8 januari 2026");
+    println!("{} 8 januari 2026", yourname);
 
-    println!(
-        "Weight on the Earth of {:?}: {:.2} kg",
-        yourname, earth_weight
-    );
-
-    let moon_weight = calculate_weight_on_moon(earth_weight);
-    println!(
-        "Weight on the Moon of {:?}: {:.2} kg",
-        yourname, moon_weight
-    );
+    let calculatedbmi = calculate_bmi(yourweight, yourlength);
+    println!("BMI of {:?}: {:.2}", yourname, calculatedbmi);
+    if calculatedbmi < 18.5 {
+        println!("Underweight");
+    } else if calculatedbmi >= 18.5 && calculatedbmi < 25.0 {
+        println!("Normal weight");
+    } else if calculatedbmi >= 25.0 && calculatedbmi < 30.0 {
+        println!("Overweight");
+    } else {
+        println!("Obesity");
+    }
 }
 
-fn calculate_weight_on_moon(earth_weight: f32) -> f32 {
-    let moon_gravity_factor: f32 = 0.165;
-    earth_weight * moon_gravity_factor
+fn calculate_bmi(yourweight: f32, yourlength: f32) -> f32 {
+    yourweight / (yourlength * yourlength)
 }
