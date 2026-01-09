@@ -9,6 +9,9 @@ https://rust-lang.org/tools/install/
 2/Install Visual Code extention:
 rust (extensions for rust)
 
+<img width="513" height="189" alt="image" src="https://github.com/user-attachments/assets/331ccbb3-747f-42fc-8fd6-c3121352dde5" />
+
+
 Create new Project :
 In Terminal window type :
 cargo new ProjectName
