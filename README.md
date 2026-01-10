@@ -18,6 +18,11 @@ rust (extensions for rust)
 
 Use Terminal window Cmd to type following commands:
 
+## Check version Rust:
+```
+rustc --version
+```
+
 ## Create new Project
 ```
 cargo new ProjectName
@@ -27,6 +32,9 @@ cargo new ProjectName
 ```
 cargo run
 ```
+
+Extra info about installation Rust:
+https://doc.rust-lang.org/book/ch01-01-installation.html
 
 
 <img width="1862" height="977" alt="image" src="https://github.com/user-attachments/assets/275d2502-391e-45f9-b08d-26ddd68006c4" />
