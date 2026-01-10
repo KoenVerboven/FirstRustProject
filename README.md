@@ -15,13 +15,18 @@ rust (extensions for rust)
 <img width="513" height="189" alt="image" src="https://github.com/user-attachments/assets/331ccbb3-747f-42fc-8fd6-c3121352dde5" />
 
 
-Create new Project :
-In Terminal window type :
+
+Use Terminal window Cmd to type following commands:
+
+## Create new Project
+```
 cargo new ProjectName
+```
 
-Running Rust in Visual Code : 
-
-In Terminal window type :
+## Run project
+```
 cargo run
+```
+
 
 <img width="1862" height="977" alt="image" src="https://github.com/user-attachments/assets/275d2502-391e-45f9-b08d-26ddd68006c4" />
