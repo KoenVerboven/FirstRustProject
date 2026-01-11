@@ -1,16 +1,24 @@
 use std::io;
 
 fn main() {
-    let yourweight: f32 = 75.0;
-    let yourlength: f32 = 1.80;
-
     println!("Enter your name:");
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).unwrap();
-    let yourname = input.trim();
+    let mut nameinput = String::new();
+    io::stdin().read_line(&mut nameinput).unwrap();
+    let yourname = nameinput.trim();
+
+    println!("Enter your weight in kg (example: 75.4):");
+    let mut weightinput = String::new();
+    io::stdin().read_line(&mut weightinput).unwrap();
+    let yourweight: f32 = weightinput.trim().parse().unwrap();
+
+    println!("Enter your length in m (example: 1.8):");
+    let mut lengthinput = String::new();
+    io::stdin().read_line(&mut lengthinput).unwrap();
+    let yourlength: f32 = lengthinput.trim().parse().unwrap();
 
     let calculatedbmi = calculate_bmi(yourweight, yourlength);
     println!("BMI of {:?}: {:.2}", yourname, calculatedbmi);
+
     if calculatedbmi < 18.5 {
         println!("Underweight");
     } else if calculatedbmi >= 18.5 && calculatedbmi < 25.0 {
