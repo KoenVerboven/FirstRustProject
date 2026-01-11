@@ -1,10 +1,13 @@
+use std::io;
+
 fn main() {
-    let yourname = "Koen Verboven";
     let yourweight: f32 = 75.0;
     let yourlength: f32 = 1.80;
-    //let yourage: u8 = 30;
 
-    println!("{} 8 januari 2026", yourname);
+    println!("Enter your name:");
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+    let yourname = input.trim();
 
     let calculatedbmi = calculate_bmi(yourweight, yourlength);
     println!("BMI of {:?}: {:.2}", yourname, calculatedbmi);
