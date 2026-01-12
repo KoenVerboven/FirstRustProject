@@ -18,7 +18,7 @@ rust (extensions for rust)
 
 Use Terminal window Cmd to type following commands:
 
-## Check version Rust:
+## Check Rust version
 ```
 rustc --version
 ```
@@ -26,6 +26,11 @@ rustc --version
 ## Create new Project
 ```
 cargo new ProjectName
+```
+
+## Build Project
+```
+cargo build
 ```
 
 ## Run project
