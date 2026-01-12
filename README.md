@@ -27,7 +27,9 @@ rustc --version
 ```
 cargo new ProjectName
 ```
-Cargo = package manager
+Cargo = package manager.
+
+More info about Cargo : https://doc.rust-lang.org/cargo/commands/cargo.html
 
 ## Build Project
 ```
