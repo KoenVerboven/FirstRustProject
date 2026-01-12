@@ -27,6 +27,7 @@ rustc --version
 ```
 cargo new ProjectName
 ```
+Cargo = package manager
 
 ## Build Project
 ```
