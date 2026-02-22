@@ -3,13 +3,16 @@
 
 Installing Rust for Visual Code :
 
-1/Download and install from 
+1/Download and install Visual Code
+https://visualstudio.microsoft.com/downloads/
+
+2/Download and install Rust
 https://rust-lang.org/tools/install/
 
 <img width="1506" height="677" alt="image" src="https://github.com/user-attachments/assets/1866e72e-99c8-4bef-bb70-50bd3d692c00" />
 
 
-2/Install Visual Code extention:
+3/Install Visual Code extention:
 rust (extensions for rust)
 
 <img width="513" height="189" alt="image" src="https://github.com/user-attachments/assets/331ccbb3-747f-42fc-8fd6-c3121352dde5" />
