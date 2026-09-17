@@ -12,7 +12,7 @@ https://rust-lang.org/tools/install/
 <img width="1506" height="677" alt="image" src="https://github.com/user-attachments/assets/1866e72e-99c8-4bef-bb70-50bd3d692c00" />
 
 
-3/Install Visual Code extention:
+3/Install Visual Studio Code extention:
 rust (extensions for rust)
 
 <img width="513" height="189" alt="image" src="https://github.com/user-attachments/assets/331ccbb3-747f-42fc-8fd6-c3121352dde5" />
