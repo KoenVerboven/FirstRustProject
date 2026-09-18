@@ -1,9 +1,9 @@
 <img width="270" height="148" alt="image" src="https://github.com/user-attachments/assets/350a5d3b-c6ef-4c57-8397-021578c5ca3e" />
 
 
-Installing Rust for Visual Code :
+Installing Rust for Visual Studio Code :
 
-1/Download and install Visual Code
+1/Download and install Visual Studio Code
 https://visualstudio.microsoft.com/downloads/
 
 2/Download and install Rust
