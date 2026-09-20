@@ -27,6 +27,13 @@ rustc --version
 ```
 
 ## Create new Project
+
+In Visual Studio Code :
+
+Menu - Choose Open Folder, to set the destination folder
+
+Type in Terminal window  :
+
 ```
 cargo new ProjectName
 ```
