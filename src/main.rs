@@ -1,5 +1,10 @@
 use std::io;
 
+/*
+The goal of this program is NOT the medical accuracy of the BMI calculation,
+ but to demonstrate the use of Rust programming language.
+*/
+
 fn main() {
     println!("Enter your name:");
     let mut name_input = String::new();
