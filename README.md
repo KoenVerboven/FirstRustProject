@@ -55,4 +55,5 @@ Extra info about installation Rust:
 https://doc.rust-lang.org/book/ch01-01-installation.html
 
 
-<img width="1862" height="977" alt="image" src="https://github.com/user-attachments/assets/275d2502-391e-45f9-b08d-26ddd68006c4" />
+<img width="1598" height="1040" alt="firstrust" src="https://github.com/user-attachments/assets/72af62a0-935a-41d4-9a43-4cf1bf9e0722" />
+
