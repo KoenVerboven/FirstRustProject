@@ -22,19 +22,28 @@ fn main() {
     let your_length: f32 = length_input.trim().parse().unwrap();
 
     let calculated_bmi = calculate_bmi(your_weight, your_length);
-    println!("BMI of {:?}: {:.2}", your_name, calculated_bmi);
+    let bmi_category = determine_bmi_category(calculated_bmi);
 
-    if calculated_bmi < 18.5 {
-        println!("Underweight");
-    } else if calculated_bmi >= 18.5 && calculated_bmi < 25.0 {
-        println!("Normal weight");
-    } else if calculated_bmi >= 25.0 && calculated_bmi < 30.0 {
-        println!("Overweight");
-    } else {
-        println!("Obesity");
-    }
+    println!("BMI of {:?}: {:.2}", your_name, calculated_bmi);
+    println!("Category: {}", bmi_category);
 }
 
 fn calculate_bmi(your_weight: f32, your_length: f32) -> f32 {
     your_weight / (your_length * your_length)
+}
+
+fn determine_bmi_category(bmi: f32) -> &'static str {
+    const UNDERWEIGHT_THRESHOLD: f32 = 18.5;
+    const NORMAL_WEIGHT_THRESHOLD: f32 = 25.0;
+    const OVERWEIGHT_THRESHOLD: f32 = 30.0;
+
+    if bmi < UNDERWEIGHT_THRESHOLD {
+        "Underweight"
+    } else if bmi >= UNDERWEIGHT_THRESHOLD && bmi < NORMAL_WEIGHT_THRESHOLD {
+        "Normal weight"
+    } else if bmi >= NORMAL_WEIGHT_THRESHOLD && bmi < OVERWEIGHT_THRESHOLD {
+        "Overweight"
+    } else {
+        "Obesity"
+    }
 }
