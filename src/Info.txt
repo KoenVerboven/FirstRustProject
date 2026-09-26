@@ -1,0 +1,37 @@
+ VARIABLE:
+ ---------
+ let calculated_bmi : f32 = calculate_bmi(your_weight, your_length);
+ ->
+ calculate_bmi -> namingconvention : snake_case_formatting
+ keyword 'let' : declares a variable
+ : f32 -> we make a variable of the type f32 (floating point 32 bit)
+ 
+ MUTABLE:
+ --------
+ (1)let mut name_input = String::new();
+ (2)io::stdin().read_line(&mut name_input).unwrap();
+ ->
+In line (2) we assign to the variable name_input a new value.
+We can do this because we make the variable name_input mutable by the keyword 'mut' (mut  name_input)
+In Rust variables are default IMMUTABLE (means incable of change)
+Mut declares a variable as mutable.
+
+
+CONSTANTS:
+-----------
+ const UNDERWEIGHT_THRESHOLD: f32 = 18.5;
+ -> we declare a constant by the keyword const.
+ -> namingconvention : The name of the constant met be in capitals.
+
+ CARGO-COMMANDS:
+ ---------------
+ Cargo is a command line tool that helps manage Rust projects.
+
+ cargo fmt -> format the code  in every file (correct spacing and so on)
+ carbo build -> build the debug version
+ cargo b -> same as cargo build 
+ cargo build --release -> build the release version
+ cargo clean -> make the buildfolders empty, starting from zere again
+ cargo run -> run the code
+ cargo r -> same as cargo run
+ cargo check -> checks the code on syntax errors and other violations
